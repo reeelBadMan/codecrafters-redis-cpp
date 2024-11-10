@@ -12,7 +12,7 @@ find_package(asio CONFIG REQUIRED)
 
 add_executable(main ${SOURCE_FILES})
 
-target_include_directories(main PRIVATE src src/server)
+target_include_directories( PRIVATE src src/server)
 
 target_link_libraries(main PRIVATE asio asio::asio)
 target_link_libraries(main PRIVATE Threads::Threads)
