@@ -3,18 +3,10 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [],
-            "compilerPath": "/usr/bin/gcc",
-            "cStandard": "c17",
-            "cppStandard": "gnu++17",
-            "intelliSenseMode": "linux-gcc-x64"
-        },
-        {
-            "name": "Linux",
-            "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/src/*",               // Include main src folder
+                "${workspaceFolder}/src/server",        // Include server subdirectory
+                "/usr/include",                        // Standard system include path
+                "/usr/local/include"                   // Standard local include path
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
