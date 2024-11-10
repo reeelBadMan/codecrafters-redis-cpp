@@ -1,0 +1,61 @@
+Fetching registry information from https://github.com/microsoft/vcpkg (HEAD)...
+Detecting compiler hash for triplet x64-linux...
+Compiler found: /usr/bin/c++
+The following packages will be built and installed:
+    asio:x64-linux@1.30.2 -- /home/goat/.cache/vcpkg/registries/git-trees/17ce1a2d17d0cb0d50eb72c89a9e51f472ef31f4
+    pthreads:x64-linux@3.0.0#14 -- /home/goat/.cache/vcpkg/registries/git-trees/2e0a6df2800d3677b941dc6504f083965b7886d9
+  * vcpkg-cmake:x64-linux@2023-05-04 -- /home/goat/.cache/vcpkg/registries/git-trees/88a7058fc7fa73a9c4c99cfcae9d79e2abf87a5a
+  * vcpkg-cmake-config:x64-linux@2022-02-06#1 -- /home/goat/.cache/vcpkg/registries/git-trees/8d54cc4f487d51b655abec5f9c9c3f86ca83311f
+Additional packages (*) will be modified to complete this operation.
+Restored 0 package(s) from /home/goat/.cache/vcpkg/archives in 364 us. Use --debug to see more details.
+Installing 1/4 vcpkg-cmake-config:x64-linux@2022-02-06#1...
+Building vcpkg-cmake-config:x64-linux@2022-02-06#1...
+/home/goat/.cache/vcpkg/registries/git-trees/8d54cc4f487d51b655abec5f9c9c3f86ca83311f: info: installing overlay port from here
+-- Installing: /home/goat/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/vcpkg_cmake_config_fixup.cmake
+-- Installing: /home/goat/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/vcpkg-port-config.cmake
+-- Installing: /home/goat/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/copyright
+-- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
+Stored binaries in 1 destinations in 2.8 ms.
+Elapsed time to handle vcpkg-cmake-config:x64-linux: 13.3 ms
+vcpkg-cmake-config:x64-linux package ABI: 94aa9541352c9716a89c7e63e6e6c4e4d9c31751647e06c128648721ae4216ae
+Installing 2/4 vcpkg-cmake:x64-linux@2023-05-04...
+Building vcpkg-cmake:x64-linux@2023-05-04...
+/home/goat/.cache/vcpkg/registries/git-trees/88a7058fc7fa73a9c4c99cfcae9d79e2abf87a5a: info: installing overlay port from here
+-- Installing: /home/goat/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_configure.cmake
+-- Installing: /home/goat/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_build.cmake
+-- Installing: /home/goat/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_install.cmake
+-- Installing: /home/goat/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg-port-config.cmake
+-- Installing: /home/goat/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 1.71 ms.
+Elapsed time to handle vcpkg-cmake:x64-linux: 12.6 ms
+vcpkg-cmake:x64-linux package ABI: a2ff528e688036269b8fe2ce01a5fa26cc1b15e92797e45b8f7d0c229ab4b6a2
+Installing 3/4 asio:x64-linux@1.30.2...
+Building asio:x64-linux@1.30.2...
+/home/goat/.cache/vcpkg/registries/git-trees/17ce1a2d17d0cb0d50eb72c89a9e51f472ef31f4: info: installing overlay port from here
+-- Downloading https://github.com/chriskohlhoff/asio/archive/asio-1-30-2.tar.gz -> chriskohlhoff-asio-asio-1-30-2.tar.gz...
+-- Extracting source /home/goat/vcpkg/downloads/chriskohlhoff-asio-asio-1-30-2.tar.gz
+-- Using source at /home/goat/vcpkg/buildtrees/asio/src/sio-1-30-2-504a65d4d1.clean
+-- Configuring x64-linux
+-- Building x64-linux-dbg
+-- Building x64-linux-rel
+-- Installing: /home/goat/vcpkg/packages/asio_x64-linux/share/asio/asio-config.cmake
+-- Installing: /home/goat/vcpkg/packages/asio_x64-linux/share/asio/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 60.9 ms.
+Elapsed time to handle asio:x64-linux: 4.2 s
+asio:x64-linux package ABI: 1c6e87be0a6fb24cfd6f98a10ffc66fe176f7d3507e928b06da55679528aee61
+Installing 4/4 pthreads:x64-linux@3.0.0#14...
+Building pthreads:x64-linux@3.0.0#14...
+/home/goat/.cache/vcpkg/registries/git-trees/2e0a6df2800d3677b941dc6504f083965b7886d9: info: installing overlay port from here
+-- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
+Stored binaries in 1 destinations in 1.51 ms.
+Elapsed time to handle pthreads:x64-linux: 10.5 ms
+pthreads:x64-linux package ABI: 4b1e0ce3623aac0149611310108a17ded627f99adc9537452bda9579617a2e43
+Total install time: 4.2 s
+asio provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(asio CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE asio::asio)
+
